@@ -284,6 +284,7 @@ import Box from '@mui/material/Box';
 import Translator from "./Translator"
 import Paper from '@mui/material/Paper';
 import Phonymn from './Phonymn'
+import Synonymn from "./Synonymn"
 import  "./mui.css"
 
 
@@ -349,7 +350,7 @@ export default function BasicTabs() {
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" >
           <Tab label="Translator" {...a11yProps(0)} />
           <Tab label="Phonymn" {...a11yProps(1)} />
-         
+          <Tab label="Synonyms" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -357,6 +358,9 @@ export default function BasicTabs() {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
       <Phonymn/>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+      <Synonymn/>
       </CustomTabPanel>
       
   
