@@ -28,3 +28,10 @@
     cursor: pointer;
     background-color: rgb(200, 253, 130);
   }
+  .go {
+    padding:"20px";
+    background-color:'grey';
+    color:'#fff';
+    width:'150px';
+    border-radius: "10px"
+  }

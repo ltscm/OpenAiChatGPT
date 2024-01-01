@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Message from "./Message";
 import Input from "./Input";
 import History from "./History";
@@ -18,7 +17,7 @@ export default function App() {
   const [history, setHistory] = useState([]);
   const [word, setWord] = useState('');
   console.log(word, "word")
-
+  const API_KEY = "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";
   const handleChangeLookup = (event) => {
     setWord(event.target.value);
   };

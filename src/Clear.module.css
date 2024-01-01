@@ -1,16 +1,27 @@
 .wrapper {
-    width: 50%;
-    height: 60px;
+    width: 180%;
+    height: 40px;
     background-color: #5a18b1;
     border: none;
     border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
     color: #fff;
+  
   }
   
   .wrapper:hover {
     cursor: pointer;
     background-color: #5a18b1;
+    color: #fff;
+  }
+  .go {
+    width: 180%;
+    height: 40px;
+    background-color: #7d5ea5;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
     color: #fff;
   }

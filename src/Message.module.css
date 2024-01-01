@@ -6,8 +6,15 @@
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: #88888b;
+    width: 100%;
   }
-  
+  .go {
+    padding:"20px";
+    background-color:'grey';
+    color:'#fff';
+    width:'150px';
+    border-radius: "10px"
+  }
   .avatar {
     width: 40px;
     height: 40px;

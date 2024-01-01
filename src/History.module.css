@@ -9,3 +9,10 @@
     cursor: pointer;
     background-color: #323236;
   }
+  .go {
+    padding:"20px";
+    background-color:'grey';
+    color:'#fff';
+    width:'150px';
+    border-radius: "10px"
+  }

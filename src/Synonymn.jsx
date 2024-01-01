@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import  "./mui.css"// Replace with your actual stylesheet path
 import styles from "./Clear.module.css";
 
-const API_KEY = "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"; // Replace with your actual API key
+const API_KEY = "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"; // Replace with your actual API key
 
 function App() {
   const [word, setWord] = useState("");
