@@ -330,8 +330,8 @@ export default function BasicTabs() {
   };
 
   return (
-    <div style={{marginTop:"100px"}}>
-      <Typography style={{alignItems:"center",display:"flex",justifyContent:"center",fontSize:"2rem"}}>Abakus Resource App </Typography>
+    <div style={{backgroundColor:"#f8f8f8",  textAlign:"center"}}>
+      <Typography style={{color:"#410099", fontSize:"24px", fontWeight:"bold",paddingBlock:"1.4em",}} >Abakus Resource App </Typography>
    
       <Box
       // sx={{
@@ -343,14 +343,15 @@ export default function BasicTabs() {
       //     // height: 528,
       //   },
       // }}
+      style={{display:"flex",justifyContent:"center", borderRadius:"6px",}}
     >
-      <Paper elevation={8} >
+      <Paper style={{width:"50%",marginBottom:"3em"}} >
     
       <Box>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" >
-          <Tab label="Translator" {...a11yProps(0)} />
-          <Tab label="Phonymn" {...a11yProps(1)} />
-          <Tab label="Synonyms" {...a11yProps(2)} />
+          <Tab label="Translator" style={{fontSize:"12px",fontWeight:"bold",letterSpacing:"0px"}} {...a11yProps(0)} />
+          <Tab label="Phonymn" style={{fontSize:"12px",fontWeight:"bold",letterSpacing:"0px"}} {...a11yProps(1)} />
+          <Tab label="Synonyms"  style={{fontSize:"12px",fontWeight:"bold",letterSpacing:"0px"}} {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>

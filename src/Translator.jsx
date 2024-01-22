@@ -195,17 +195,18 @@ export default function App() {
           display: "flex",
           justifyContent: "center",
           fontSize: "2rem",
-          width: "1170px",
+          // width: "1170px",
         }}
       >
         <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Translate</InputLabel>
+          <InputLabel id="demo-simple-select-label"  style={{ fontSize:"14px" }}>Translate</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={word}
             label="Translate"
             onChange={handleChangeLookup}
+            style={{textAlign:"left"}}
           >
             <MenuItem value="Translate to portuguese -pt">
               Translate to portuguese
@@ -216,29 +217,31 @@ export default function App() {
           </Select>
         </FormControl>
       </div>
-      <div style={{ display: "flex", marginTop: "50px" }}>
-        <div className="Column" style={{ display: "flex" }}>
-          <h3 style={{ marginTop: "-43px" }}>Input here</h3>
+      <div style={{ display: "",border:""}}>
+        <div className="" style={{ display: "" }}>
+          <h3 style={{ textAlign:"left" }}>Input here</h3>
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onClick={input && word ? handleSubmit : undefined}
-            style={{ marginBottom: "20px" }}
+            style={{ marginBottom: "" }}
           />
-          <span style={{ marginLeft: "500px", display: "flex" }}>
+          <div style={{height:"50px"}}>
+          <span style={{ float:"right",marginLeft: "", display: "" }}>
             &nbsp;
-            <button className={styles.wrapper} onClick={handleGoClick}>
+            <Clear className="clearbtn" onClick={clear} style={{borderRadius:"4px",backgroundColor:"gray",minWidth:"10em"}} />
+            <button className={styles.wrapper} onClick={handleGoClick} style={{backgroundColor:"#410099",borderRadius:"4px",minWidth:"10em",marginInline:"10px"}}>
               Go
             </button>
-            &nbsp;
-            <Clear onClick={clear} style={{ marginBottom: "20px", backgroundColor: "lightgrey" }} />
-          </span>
+           </span>
+           </div>
         </div>
       </div>
       <div>
         <div className="Column">
-          <h3 className="Title"></h3>
-          <div className="Content">
+          
+          {/* <div className="Content">
+          <div className="_wrapper_aaqxy_1" style={{ backgroundColor: 'white',padding:"0px",border:"1px solid #707070" }}>
             {history.map((el, i) => {
               return (
                 <History
@@ -252,25 +255,28 @@ export default function App() {
                 />
               );
             })}
+            </div>
+          </div> */}
+          <div >
+            <h3 className="Title" style={{textAlign:"left"}} >Output</h3>
           </div>
-          <div>
-            <h3 className="Title">output</h3>
-          </div>
-          <div style={{ display: 'flex' }}>
+          {/* <div style={{ display: 'flex' }}>
             <Typography style={{ marginLeft: '500px' }}> now tell me what you have listened in speaker</Typography>
             <div style={{ marginLeft: "150px" }}>
               <Typography>Result</Typography>
             </div>
-          </div>
-          <div style={{ display: "flex" }}>
+          </div> */}
+          <div style={{ display: "" }}>
             <div className="Content">
+            <div className="" style={{ backgroundColor: 'white',padding:"0px",border:"" }}>
               {messages.map((el, i) => {
                 return (
                   <Message key={i} role={el.role} content={el.content} />
                 );
               })}
+              </div>
             </div>
-            <div style={{ width: "100%", marginLeft: "100px", display: 'flex' }}>
+            {/* <div style={{ width: "100%", marginLeft: "100px", display: 'flex' }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -308,7 +314,7 @@ export default function App() {
               </svg>
               {isRecording && <span style={{ marginLeft: "10px" }}>Recording...</span>}
             </div>
-        
+         */}
 
 <div className="Content">
   {messages.slice(1).map((el, i) => {
@@ -327,12 +333,12 @@ export default function App() {
     return (
       <div key={i}>
         {/* Conditionally render the Comparison Result based on !isRecording and goButtonClicked */}
-        {i === messages.length - 2 && !isRecording && goButtonClicked && (
+        {/* {i === messages.length - 2 && !isRecording && goButtonClicked && (
           <div>
             <h3 className="Title">Comparison Result</h3>
             <p style={resultStyle}>{resultMessage}</p>
           </div>
-        )}
+        )} */}
       </div>
     );
   })}
@@ -344,10 +350,10 @@ export default function App() {
 
 
           </div>
-          <div>
+          {/* <div>
             <h3 className="Title">Recorded Text</h3>
             <p>{recordedText} </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

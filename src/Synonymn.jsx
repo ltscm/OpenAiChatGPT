@@ -57,26 +57,34 @@ function App() {
 
   return (
     <div className={styles.appContainer}>
+      <div>
       <input
         type="text"
         value={word}
         onChange={(e) => setWord(e.target.value)}
         placeholder='Enter a word to find synonyms'
         className={styles.input}
+        style={{height:"4em",width:"100%",border:"1px solid #410099", fontSize:"14px",borderRadius:"4px"}}
       />
-      <select onChange={handleLanguageChange} value={selectedLanguage} className={styles.select}>
+      </div>
+      <div style={{margin:"1em"}}>
+      <select onChange={handleLanguageChange} value={selectedLanguage} className={styles.select} style={{height:"2em",width:"10em"}}>
         <option value="pt">Portuguese</option>
         <option value="es">Spanish</option>
         <option value="en">English</option>
         {/* Add more language options as needed */}
       </select>
-      <button onClick={callOpenAIAPI} className={styles.button}>Get Synonyms</button>
+      </div>
+      <div style={{marginBlock:"4em"}}>
+      <button onClick={callOpenAIAPI} className={styles.button} style={{height:"40px",color:"white",backgroundColor:"#410099",borderRadius:"4px",minWidth:"10em",border:"none",fontSize:"14px"}}>Get Synonyms</button>
       {synonyms !== "" &&
         <div className={styles.synonymsContainer}>
           <h3 className={styles.synonymsHeader}>Synonyms for "{word}" in {selectedLanguage}:</h3>
           <p className={styles.synonyms}>{synonyms}</p>
         </div>
+       
       }
+       </div>
     </div>
   );
 }
