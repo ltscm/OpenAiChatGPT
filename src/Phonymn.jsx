@@ -82,6 +82,7 @@ export default function App() {
             value={word}
             label="Phonymn"
             onChange={handleChangeLookup}
+            style={{textAlign:"left"}}
           >
             <MenuItem value="phonetic for the word ">phonetic for the word </MenuItem>
             <MenuItem value="phonetic for the word ">phonetic for the word </MenuItem>
