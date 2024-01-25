@@ -3,6 +3,10 @@
 }
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
     color: #5a18b1 !important;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0px;
+
 }
 .css-1aquho2-MuiTabs-indicator {
     background-color: #5a18b1 !important;
@@ -16,3 +20,27 @@
 .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
     color:#5a18b1 !important
 }
+._wrapper_11jg6_1
+{
+    width:10em !important;
+    height: 40px;
+    background-color:gray ;
+    border: none;
+    border-radius: 4px !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    
+}
+._wrapper_aaqxy_1
+{
+    display: block;
+    background-color: transparent !important;
+    color:black !important;
+    border:1px solid #707070;
+    width:auto;
+}
+
+  ._wrapper_11jg6_1:hover {
+    background-color: gray;
+
+  }

@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Message from "./Message";
 import Input from "./Input";
 import History from "./History";
@@ -18,7 +17,7 @@ export default function App() {
   const [history, setHistory] = useState([]);
   const [word, setWord] = useState('');
   console.log(word, "word")
-
+  const API_KEY = "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";
   const handleChangeLookup = (event) => {
     setWord(event.target.value);
   };
@@ -74,39 +73,42 @@ export default function App() {
 
   return (
     <div className="App">
-      <div style={{ alignItems: "center", display: "flex", justifyContent: "center", fontSize: "2rem", width: "1170px" }}>
+      <div style={{ alignItems: "center", display: "flex", justifyContent: "center", fontSize: "2rem", width: "" }}>
         <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Phonymn</InputLabel>
+          <InputLabel id="demo-simple-select-label"  style={{ fontSize:"14px" }}>Phonymn</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={word}
             label="Phonymn"
             onChange={handleChangeLookup}
+            style={{textAlign:"left"}}
           >
             <MenuItem value="phonetic for the word ">phonetic for the word </MenuItem>
             <MenuItem value="phonetic for the word ">phonetic for the word </MenuItem>
           </Select>
         </FormControl>
       </div>
-      <div style={{ display: "flex", marginTop: "50px" }}>
+      <div style={{ display: "", marginTop: "" }}>
         <div className="Column">
-        <h3 style={{  marginTop: "-43px" }}>Input here</h3>
+        <h3 style={{ textAlign:"left" }}>Input here</h3>
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onClick={input && word ? handleSubmit : undefined}
             style={{ marginBottom: "20px" }}
           />
+          <div style={{float:"right",height:"50px"}}>
           <span style={{ marginTop: "20px" }}>
-            <Clear onClick={clear} />
-            <button className={styles.wrapper} onClick={handleGoClick}>
+            <Clear className="clearbtn"  onClick={clear} />
+            <button className={styles.wrapper} onClick={handleGoClick} style={{backgroundColor:"#410099",borderRadius:"4px",minWidth:"10em",marginInline:"10px"}}>
               Go
             </button>
           </span>
+          </div>
         </div>
-        <div style={{ marginLeft: "500px", marginTop: "-70px" }}>
-          <h3 className="Title">output</h3>
+        <div style={{}}>
+          <h3 className="Title" style={{textAlign:"left" }}>Output</h3>
           <div className="Content">
             {messages.map((el, i) => {
               return <Message key={i} role={el.role} content={el.content} />;

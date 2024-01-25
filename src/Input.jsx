@@ -2,12 +2,14 @@ import styles from "./Input.module.css";
 
 export default function Input({ value, onChange, onClick }) {
   return (
-    <div className={styles.wrapper} style={{marginBottom:"20px"}}>
+    <div className={styles.wrapper} style={{marginBottom:"20px",height:"50px",backgroundColor:"transparent",border:"1px solid #707070",width:"auto",borderRadius:"4px"}}>
       <input
         className={styles.text}
         placeholder="Your prompt here..."
         value={value}
         onChange={onChange}
+        style={{paddingLeft:"0px 0px 0px 20px",fontSize:"14px",color:"black",}}
+       
       />
       {/* <button className={styles.btn} onClick={onClick}>
         Go

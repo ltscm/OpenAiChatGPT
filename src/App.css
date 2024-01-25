@@ -20,12 +20,19 @@
   background-color: rgb(218, 255, 170);
 }
 
-.Content {
+/* .Content {
   height: calc(100vh - 200px);
   overflow-y: scroll;
   margin-bottom: 20px;
-}
+} */
 
 ::-webkit-scrollbar {
   display: none;
+}
+.go {
+  padding:"20px";
+  background-color:'grey';
+  color:'#fff';
+  width:'150px';
+  border-radius: "10px"
 }
