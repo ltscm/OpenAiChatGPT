@@ -38,9 +38,15 @@
     color:black !important;
     border:1px solid #707070;
     width:auto;
+    padding: 0px;
 }
 
   ._wrapper_11jg6_1:hover {
     background-color: gray;
 
+  }
+  .clearbtn
+  {
+    font-weight: 100 !important;
+    height: 2.8em;
   }

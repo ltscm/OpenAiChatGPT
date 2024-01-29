@@ -8,7 +8,7 @@ export default function Input({ value, onChange, onClick }) {
         placeholder="Your prompt here..."
         value={value}
         onChange={onChange}
-        style={{paddingLeft:"0px 0px 0px 20px",fontSize:"14px",color:"black",}}
+        style={{paddingLeft:" 13px",fontSize:"14px",color:"black",}}
        
       />
       {/* <button className={styles.btn} onClick={onClick}>

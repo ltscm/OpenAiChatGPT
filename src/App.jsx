@@ -349,9 +349,9 @@ export default function BasicTabs() {
     
       <Box>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" >
-          <Tab label="Translator" style={{fontSize:"12px",fontWeight:"bold",letterSpacing:"0px"}} {...a11yProps(0)} />
-          <Tab label="Phonymn" style={{fontSize:"12px",fontWeight:"bold",letterSpacing:"0px"}} {...a11yProps(1)} />
-          <Tab label="Synonyms"  style={{fontSize:"12px",fontWeight:"bold",letterSpacing:"0px"}} {...a11yProps(2)} />
+          <Tab label="Translator" style={{fontSize:"12px",fontWeight:"bold",letterSpacing:"0px",fontFamily:"sans-serif"}} {...a11yProps(0)} />
+          <Tab label="Phonymn" style={{fontSize:"12px",fontWeight:"bold",letterSpacing:"0px",fontFamily:"sans-serif"}} {...a11yProps(1)} />
+          <Tab label="Synonyms"  style={{fontSize:"12px",fontWeight:"bold",letterSpacing:"0px",fontFamily:"sans-serif"}} {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>

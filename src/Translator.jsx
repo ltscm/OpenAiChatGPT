@@ -226,11 +226,12 @@ export default function App() {
             onClick={input && word ? handleSubmit : undefined}
             style={{ marginBottom: "" }}
           />
-          <div style={{height:"50px"}}>
+          <div style={{height:"50px", display: "flex", alignItems: "center",justifyContent: "right",fontSize:"14px"}}>
           <span style={{ float:"right",marginLeft: "", display: "" }}>
             &nbsp;
-            <Clear className="clearbtn" onClick={clear} style={{borderRadius:"4px",backgroundColor:"gray",minWidth:"10em"}} />
-            <button className={styles.wrapper} onClick={handleGoClick} style={{backgroundColor:"#410099",borderRadius:"4px",minWidth:"10em",marginInline:"10px"}}>
+          <button className="clearbtn" onClick={clear} style={{borderRadius:"4px",backgroundColor:"gray",minWidth:"10em",fontSize:"14px",fontWeight:"600",fontWeight:"100"}} >Clear
+      </button>
+            <button className={styles.wrapper} onClick={handleGoClick} style={{backgroundColor:"#410099",borderRadius:"4px",minWidth:"10em",marginInline:"10px",fontSize:"14px",fontWeight:"600",fontWeight:"100"}}>
               Go
             </button>
            </span>

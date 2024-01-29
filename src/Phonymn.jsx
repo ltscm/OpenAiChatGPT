@@ -98,14 +98,28 @@ export default function App() {
             onClick={input && word ? handleSubmit : undefined}
             style={{ marginBottom: "20px" }}
           />
-          <div style={{float:"right",height:"50px"}}>
+          {/* <div style={{float:"right",height:"50px"}}>
           <span style={{ marginTop: "20px" }}>
             <Clear className="clearbtn"  onClick={clear} />
             <button className={styles.wrapper} onClick={handleGoClick} style={{backgroundColor:"#410099",borderRadius:"4px",minWidth:"10em",marginInline:"10px"}}>
               Go
             </button>
           </span>
-          </div>
+          </div> */}
+
+<div style={{height:"50px", display: "flex", alignItems: "center",justifyContent: "right"}}>
+          <span style={{ float:"right",marginLeft: "", display: "" }}>
+            &nbsp;
+            <button className="clearbtn" onClick={clear} style={{borderRadius:"4px",backgroundColor:"gray",minWidth:"10em",fontSize:"14px",fontWeight:"600",fontWeight:"100"}} >Clear
+      </button>
+            <button className={styles.wrapper} onClick={handleGoClick} style={{backgroundColor:"#410099",borderRadius:"4px",minWidth:"10em",marginInline:"10px",fontSize:"14px",fontWeight:"600"}}>
+              Go
+            </button>
+           </span>
+           </div>
+
+
+
         </div>
         <div style={{}}>
           <h3 className="Title" style={{textAlign:"left" }}>Output</h3>
