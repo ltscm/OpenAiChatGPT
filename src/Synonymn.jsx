@@ -64,7 +64,7 @@ function App() {
         onChange={(e) => setWord(e.target.value)}
         placeholder='Enter a word to find synonyms'
         className={styles.input}
-        style={{paddingLeft:"10px",height:"4em",width:"100%",border:"1px solid #410099", fontSize:"14px",borderRadius:"4px"}}
+        style={{paddingLeft:"10px",height:"4em",width:"100%",border:"1px solid #707070", fontSize:"14px",borderRadius:"4px"}}
       />
       </div>
       <div style={{margin:"1em"}}>

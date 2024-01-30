@@ -110,7 +110,7 @@ export default function App() {
 <div style={{height:"50px", display: "flex", alignItems: "center",justifyContent: "right"}}>
           <span style={{ float:"right",marginLeft: "", display: "" }}>
             &nbsp;
-            <button className="clearbtn" onClick={clear} style={{borderRadius:"4px",backgroundColor:"gray",minWidth:"10em",fontSize:"14px",fontWeight:"600",fontWeight:"100"}} >Clear
+            <button className="clearbtn" onClick={clear} style={{borderRadius:"4px",backgroundColor:"gray",minWidth:"10em",fontSize:"14px",fontWeight:"600",fontWeight:"100",border:"0px"}} >Clear
       </button>
             <button className={styles.wrapper} onClick={handleGoClick} style={{backgroundColor:"#410099",borderRadius:"4px",minWidth:"10em",marginInline:"10px",fontSize:"14px",fontWeight:"600"}}>
               Go
