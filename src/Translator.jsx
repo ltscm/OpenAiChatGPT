@@ -198,6 +198,7 @@ export default function App() {
           // width: "1170px",
         }}
       >
+        <fieldset style={{ border: "1px solid #707070"}}>
         <FormControl fullWidth>
           <InputLabel id="demo-simple-select-label"  style={{ fontSize:"14px" }}>Translate</InputLabel>
           <Select
@@ -208,6 +209,7 @@ export default function App() {
             onChange={handleChangeLookup}
             style={{textAlign:"left"}}
           >
+
             <MenuItem value="Translate to portuguese -pt">
               Translate to portuguese
             </MenuItem>
@@ -216,7 +218,9 @@ export default function App() {
             </MenuItem>
           </Select>
         </FormControl>
+      </fieldset>
       </div>
+      
       <div style={{ display: "",border:""}}>
         <div className="" style={{ display: "" }}>
           <h3 style={{ textAlign:"left" }}>Input here</h3>
@@ -229,9 +233,9 @@ export default function App() {
           <div style={{height:"50px", display: "flex", alignItems: "center",justifyContent: "right",fontSize:"14px"}}>
           <span style={{ float:"right",marginLeft: "", display: "" }}>
             &nbsp;
-          <button className="clearbtn" onClick={clear} style={{borderRadius:"4px",backgroundColor:"gray",minWidth:"10em",fontSize:"14px",fontWeight:"600",fontWeight:"100",border:"0px",color:"white"}} >Clear
+          <button className="clearbtn" onClick={clear} style={{borderRadius:"4px",backgroundColor:"gray",minWidth:"10em",fontSize:"14px",fontWeight:"600",fontWeight:"100",border:"0px",color:"white",letterSpacing:"0.5px"}} >Clear
       </button>
-            <button className={styles.wrapper} onClick={handleGoClick} style={{backgroundColor:"#410099",borderRadius:"4px",minWidth:"10em",marginInline:"10px",fontSize:"14px",fontWeight:"600",fontWeight:"100"}}>
+            <button className={styles.wrapper} onClick={handleGoClick} style={{backgroundColor:"#410099",borderRadius:"4px",minWidth:"10em",marginInline:"10px",fontSize:"14px",fontWeight:"600",fontWeight:"100",letterSpacing:"0.5px"}}>
               Go
             </button>
            </span>
