@@ -198,7 +198,7 @@ export default function App() {
           // width: "1170px",
         }}
       >
-        <fieldset style={{ border: "1px solid #707070"}}>
+       
         <FormControl fullWidth>
           <InputLabel id="demo-simple-select-label"  style={{ fontSize:"14px" }}>Translate</InputLabel>
           <Select
@@ -218,7 +218,7 @@ export default function App() {
             </MenuItem>
           </Select>
         </FormControl>
-      </fieldset>
+     
       </div>
       
       <div style={{ display: "",border:""}}>
