@@ -330,7 +330,7 @@ export default function BasicTabs() {
   };
 
   return (
-    <div style={{backgroundColor:"#f8f8f8",  textAlign:"center"}}>
+    <div style={{backgroundColor:"#f8f8f8",  textAlign:"center",height:"85vh"}}>
       <Typography style={{color:"#410099", fontSize:"24px", fontWeight:"bold",paddingBlock:"1.4em",}} >Abakus Resource App </Typography>
    
       <Box
